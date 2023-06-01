@@ -43,7 +43,6 @@ class PaymentMethod(Base):
     institution_name = Column(String(255))
     user = relationship('User', backref='payment_methods')
 
-
 class Expense(Base):
     """
     Represents an expense recorded in the system.
