@@ -8,3 +8,7 @@ env = environ.Env()
 environ.Env().read_env()
 
 TOKEN = env('BOT_TOKEN')
+
+
+#Creating the bot
+bot = telebot.TeleBot(TOKEN)
